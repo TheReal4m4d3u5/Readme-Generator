@@ -15,3 +15,21 @@ function renderLicenseBadge(license) {
     }
   
   }
+
+
+  // TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+
+    switch(license) {
+      case "mit":
+        return  '[![License: MIT]] (https://opensource.org/licenses/MIT)';
+        break;
+      case "apache":
+        return  '[![License: Apache 2.0]] (https://opensource.org/licenses/Apache-2.0)';
+        break;
+      default:
+        return "";
+    }
+  
+  }
