@@ -57,12 +57,12 @@ function renderLicenseBadge(license) {
   
     return `# ${data.title}
   
-    ${lienceBadge}
+  ${lienceBadge}
+
+## Description
+  ${data.description}
   
-    ## Description
-    ${data.description}
-  
-    ## Table of Contents 
+## Table of Contents 
   
   - [Installation](#installation)
   
