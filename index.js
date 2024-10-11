@@ -69,3 +69,19 @@ const questions = [
         type: 'input',
     },
 ];
+
+// TODO: Create a function to initialize app
+function init(questions) {
+
+    inquirer.prompt(questions)
+    .then((data) => {
+
+        const myFileContent = markdown.generateMarkdown(data)
+        writeToFile(`README.md`, myFileContent);
+    })
+    .catch(console.error); // using a named function as a callback
+
+}
+
+// Function call to initialize app
+init(questions);
